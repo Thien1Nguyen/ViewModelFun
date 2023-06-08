@@ -1,0 +1,14 @@
+@model List<int>
+@{
+    ViewData["Int"] = "Int Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Here are some numbers</h1>
+    <p>@{
+        foreach(int i in @Model)
+        {
+            <p> @i </p>
+        }
+        }</p>
+</div>
